@@ -1,1 +1,16 @@
-test
+AWSTemplateFormatVersion: "2010-09-09"
+
+Description: AWS CloudFormation workshop - Template and stack.
+
+Resources:
+  S3Bucket:
+    Type: AWS::S3::Buck
+    Properties:
+      VersioningConfiguration:
+        Status: Enabled
+      BucketName: !Sub "daffda-dfljsldfj"
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+    DeletionPolicy: Delete
