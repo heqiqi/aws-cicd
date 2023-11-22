@@ -4,7 +4,7 @@ Description: AWS CloudFormation workshop - Template and stack.
 
 Resources:
   S3Bucket:
-    Type: AWS::S3::Buck
+    Type: AWS::S3::Bucket
     Properties:
       VersioningConfiguration:
         Status: Enabled
