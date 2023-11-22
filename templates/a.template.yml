@@ -8,7 +8,7 @@ Resources:
     Properties:
       VersioningConfiguration:
         Status: Enabled
-      BucketName: !Sub "cfn-cicd-${AWS::AccountId}-202311"
+      BucketName: !Sub "cfn-cicd-${AWS::AccountId}-2023"
       BucketEncryption:
         ServerSideEncryptionConfiguration:
           - ServerSideEncryptionByDefault:
